@@ -10,6 +10,8 @@ app.use(bodyParser.json());
 app.post('/register', (req, res) => {
     const { Name, Email } = req.body;
 
+    console.log(req.body)
+
     // 受信データから新たなデータを生成
     const newData = {
         Name: Name,
